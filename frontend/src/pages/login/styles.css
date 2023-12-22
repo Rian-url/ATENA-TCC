@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap');
+
+main{
+    background-color: #BE9FFF;
+}
+
+.content-login{
+    background: rgb(188,173,210);
+    background: linear-gradient(158deg, rgb(206, 186, 238) 2%, rgba(165,106,243,1) 32%, rgba(158,84,254,1) 55%, rgba(151,71,255,1) 82%);
+}
+
+.content-login .text h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    color: #fff;
+    padding-left: 3rem;
+}
+
+.loading{
+    animation: animate-loading 0.3s linear infinite;
+}
+
+@keyframes animate-loading {
+    0%{
+        transform: rotate(0deg);
+    } 100%{
+        transform: rotate(360deg);
+    }
+}
+
+.loge {
+    background-color: white;
+    height: 95vh;
+    color: black;
+}
+
+.loge .title{
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+.loge .logo{
+    width: 15vw;
+    height: 30vh;
+}
+
+.inputs{
+    margin-top: -10%;
+    height: 100%;
+}
+
+.loge .content-inputs p{
+    font-size: 16px;
+}
+
+.loge .content-inputs input{
+    border-radius: 4px;
+    width: 280px;
+}
+
+
+.loge .btn{
+    width: 280px;
+    background-color: #442980;
+    color: #fff;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.loge .btn:hover{
+    font-size: 17px;
+    border:black solid 2px;
+}
+
+.content-inputs .account{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.content-inputs .account button {
+    color: #442980;
+}
+
+.content-inputs .google{
+    width: 280px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+.content-inputs .google svg{
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 15px;
+    color: black;
+}
+
+.type-account{
+    border-radius: 25px;
+    border: #442980 solid 5px;
+}
+
+.type-account .title{
+    text-align: center;
+    color: black;
+    font-size: 22px;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.type-account .accounts h2{
+    color: #442980;
+    margin-left: 1rem;
+}
+
+.type-account .account-usuario:hover{
+    font-weight: bold;
+}
+
+.type-account .account-usuario img:hover{
+    border: #442980 solid 2px;
+}
+
+.type-account .account-psicologo:hover{
+    font-weight: bold;
+}
+
+.type-account .account-psicologo img:hover{
+    border: #442980 solid 2px;
+}
+
+.type-account .account-usuario h2{
+    margin-left: 2rem;
+}
+
+.type-account .account-psicologo h2{
+    margin-left: 1.3rem;
+}
+
+.exit{
+    position: absolute;
+    margin-left: 23rem;
+    margin-top: -0.5rem;
+}
+
+.exit:hover{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 250px) and (max-width: 768px){
+    .loge {
+        height: 100vh;
+    }
+
+    .loge .title{
+        font-family: 'Playfair Display', serif;
+        font-size: 30px;
+        padding-top: 3rem;
+    }
+
+    .loge .logo{
+        width: 50vw;
+    }
+
+    .loge .content-inputs{
+        height: 40vh;
+        width: 73vw;
+        margin: auto;
+    }
+
+
+    .loge .content-inputs input{
+    width: 70vw;
+    }
+
+    .loge .btn{
+        width: 70vw;
+    }
+
+
+    .content-inputs .google{
+        width: 70vw;
+        margin-top: -5rem;
+    }
+
+    .content-inputs .google svg{
+        margin-top: 3px;
+        margin-left: 2%;
+    }
+
+    .type-account{
+        border: #442980 solid 3px;
+        width: 90vw;
+        height: 80vh;
+        background-color: #fff;
+    }
+
+    .type-account .accounts{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5rem;
+        margin-top: 3rem;
+    }
+
+
+    .type-account .account-psicologo h2{
+        margin-left: 1rem;
+    }
+
+    .type-account .account-psicologo{
+        margin-top: 3rem;
+    }
+
+    .exit{
+        position: absolute;
+        margin-left: 17.5rem;
+        margin-top: 0;
+    }
+
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+    .type-account{
+        background-color: #fff;
+    }
+    
+}
+
